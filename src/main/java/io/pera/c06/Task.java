@@ -1,0 +1,44 @@
+package io.pera.c06;
+
+public class Task {
+
+    public static void main(String[] args) {
+
+        int line = 11;
+
+        for (int a = 0; a < line; a++) {
+
+            int number = 1;
+
+            System.out.format("%" + (line - a) * 2 + "s", "");
+
+            for (int b = 0; b <= a; b++) {
+
+                System.out.format("%4d", number);
+
+                number = number * (a - b) / (b + 1);
+            }
+
+            System.out.println();
+        }
+
+    }
+
+}
+
+// OUTPUT
+/*
+
+                         1
+                       1   1
+                     1   2   1
+                   1   3   3   1
+                 1   4   6   4   1
+               1   5  10  10   5   1
+             1   6  15  20  15   6   1
+           1   7  21  35  35  21   7   1
+         1   8  28  56  70  56  28   8   1
+       1   9  36  84 126 126  84  36   9   1
+     1  10  45 120 210 252 210 120  45  10   1
+
+ */
