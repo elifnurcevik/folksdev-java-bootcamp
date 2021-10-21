@@ -4,21 +4,17 @@ public class Task {
 
     // prime numbers from 1 to 100
     public static void main(String[] args) {
-        for(int number=2; number<=100; number++)
-        {
+        for (int number = 2; number <= 100; number++) {
             int flag = 0;
-            for (int i = 2; i < number; i++)
-            {
-                if (number % i == 0)
-                {
+            for (int i = 2; i < number; i++) {
+                if (number % i == 0) {
                     flag = 1;
                     break;
                 }
             }
 
-            if(flag==0)
-            {
-                System.out.print(number+", ");
+            if (flag == 0) {
+                System.out.print(number + ", ");
             }
         }
         System.out.println();

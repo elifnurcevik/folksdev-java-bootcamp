@@ -10,19 +10,19 @@ public class Task {
         Scanner scanner = new Scanner(System.in);
 
         int number;
-        while ((number= Integer.parseInt(scanner.nextLine()))!= 0){
-            int reverse= getReverse(number);
-            System.out.printf("Your entered number: %d reversed number --> %d%n" , number, reverse);
+        while ((number = Integer.parseInt(scanner.nextLine())) != 0) {
+            int reverse = getReverse(number);
+            System.out.printf("Your entered number: %d reversed number --> %d%n", number, reverse);
             System.out.print("Enter a number: ");
 
         }
 
     }
 
-    public static int getReverse(int num){
-        int reverse= 0;
+    public static int getReverse(int num) {
+        int reverse = 0;
 
-        while(num != 0){
+        while (num != 0) {
             reverse = reverse * 10 + num % 10;
             num /= 10;
         }
